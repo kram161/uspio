@@ -204,7 +204,7 @@
         padding: 10px 30px;
         max-width: 214px;
         box-sizing: border-box;
-        margin: 32px auto;
+        margin: 32px calc(50% - 107px);
         order: 2;
         transition: $animation;
         &--logo{
@@ -233,6 +233,9 @@
             color: #37454A;
             transition: $animation;
         }
+    }
+    hr{
+        display: none;
     }
     &__feedback{
         order: 4;
@@ -365,4 +368,145 @@
         }
     }
     
+}
+
+@media screen and (min-width: 768px) {
+
+    .header{
+        &__salons{
+            width: 50%;
+            order: 1;
+        }
+        &__sign-up{
+            margin: auto auto auto 0;
+            order: 3;
+            height: fit-content;
+        }
+        &__commerce{
+            order: 2;
+            margin: auto 0 auto -20px;
+            justify-content: flex-end;
+        }
+        &__feedback{
+            order: 4;
+            margin: 16px 8px 16px 0;
+            a{
+                display: flex;
+                flex-direction: column;  
+                span{
+                    width: fit-content;
+                    margin: 0 0 0 auto
+                }
+            }
+        }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 1170px;
+        margin: 0 auto;
+        &__burger{
+            display: none;
+        }
+        &__logo{
+            max-width: unset;
+            display: flex;
+            align-items: flex-start;
+            height: auto;
+            img{
+                width: 200px;
+            }
+            &::after{
+                display: block;
+                position: relative;
+                width: 1px;
+                height: 100%;
+                content: '';
+                background: #F4F4F4;
+                margin: 0 0 0 13px;
+            }
+        }
+        &__cap{
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            right: unset;
+            background: none;
+            width: unset;
+        }
+        &__salons{
+            width: 100%;
+            max-width: 210px;
+            order: 1;
+            margin: 0 0 0 30px;
+        }
+        &__sign-up{
+            order: 2;
+            margin: 0 67px 0 96px;
+        }
+        &__feedback{
+            order: 4;
+            margin: 0 0 0 30px;
+        }
+        hr{
+            display: block;
+            order: 3;
+            height: 100%;
+            width: 1px;
+            background: #F4F4F4;
+            border: none;;
+            margin: 0;
+        }
+        &__commerce{
+            order: 5;
+            width: unset;
+            margin: 0 0 0 40px;
+        }
+        &__menu{
+            right: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            position: absolute;
+            width: 100vw;
+            bottom: -50px;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+            ul{
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                border: none;
+                li{         
+                    &:not(:last-child){
+                        &::after{
+                            position: relative;
+                            height: 100%;
+                            width: 1px;
+                            content: '';
+                            background: #37454A;
+                            margin: 0 28px;
+                            opacity: 0.2;
+                        }
+                    }
+                    a{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        &__search{
+            height: 100%;
+            max-width: 435px;
+            width: 100%;
+            border: none;
+            margin: 0;
+        }
+    }
 }
