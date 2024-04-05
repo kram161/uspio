@@ -35,9 +35,15 @@ body{
 @media screen and (min-width: 1024px){
     .container{
         max-width: 1170px;
+        padding: 0 16px;
+    }
+}
+@media screen and (min-width: 1202px){
+    .container{
         padding: 0;
     }
 }
+
 
 .transparent-button{
     display: flex;
