@@ -35,6 +35,7 @@
         "bem-tools-core": "bem-tools/bem-tools-core",
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.27.7",
+        "css-loader": "^7.0.0",
         "del": "^6.0.0",
         "eslint": "^8.11.0",
         "gulp": "^4.0.2",
@@ -66,7 +67,9 @@
         "postcss": "^8.4.8",
         "postcss-scss": "^4.0.3",
         "require-dir": "^1.2.0",
-        "sass": "^1.49.9",
+        "sass": "^1.74.1",
+        "sass-loader": "^14.1.1",
+        "style-loader": "^3.3.4",
         "stylelint": "^14.5.3",
         "stylelint-config-standard-scss": "^3.0.0",
         "stylelint-order": "^5.0.0",
@@ -74,7 +77,8 @@
         "yargs": "^17.3.1"
     },
     "dependencies": {
-        "webpack": "^5.70.0",
+        "swiper": "^11.1.0",
+        "webpack": "^5.91.0",
         "webpack-stream": "^7.0.0"
     },
     "husky": {

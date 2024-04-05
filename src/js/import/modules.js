@@ -3,3 +3,4 @@ import "%modules%/footer/footer";
 import "%modules%/promo/promo";
 import "%modules%/advantages/advantages";
 import "%modules%/possibilities/possibilities";
+import "%modules%/technologies/technologies";
