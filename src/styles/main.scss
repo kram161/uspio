@@ -12,3 +12,104 @@
 
 // БЭМ-блоки
 @import "../blocks/modules";
+
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 752px;
+    width: 100%;
+    padding: 0 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 1008px;
+        padding: 0 16px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+
+.transparent-button{
+    display: flex;
+    border: 1px solid $green;
+    color: #37454A;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: $animation;
+    width: fit-content;
+    cursor: pointer;
+    &:hover{
+        background: $green;
+        border-color: #37454A;
+        color: #fff;
+    }
+}
+
+.colored-button{
+    display: flex;
+    align-items: center;
+    border: 1px solid $green;
+    background: $green;
+    padding: 10px 10px 10px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: $animation;
+    width: fit-content;
+    box-shadow: 0px 10px 20px 0px #84C7374D;
+    &__arrow{
+        position: relative;
+        content: '';
+        margin: 0 0 0 20px;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: $animation;
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: $animation;
+        }
+    }
+    &:hover{
+        background: #fff;
+        color: $green;
+        .colored-button__arrow{
+            background: $green;
+            svg{
+                path{
+                    fill: #fff;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 375px){
+    .colored-button{
+        font-size: 16px;
+    }
+}
