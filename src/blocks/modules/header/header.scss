@@ -210,6 +210,7 @@
         margin: 24px calc(50% - 107px);
         order: 2;
         transition: $animation;
+        cursor: pointer;
         &--logo{
             display: flex;
             flex-direction: column;
@@ -281,6 +282,7 @@
         &--favorites,&--cart{
             position: relative;
             display: flex;
+            cursor: pointer;
             p{
                 position: absolute;
                 top: -15px;
