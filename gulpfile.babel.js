@@ -4,6 +4,16 @@ import gulp from "gulp";
 
 const requireDir = require("require-dir"),
     paths = {
+        sendEmail: {
+            src: [
+                "./src/send-email/*.{php,txt}"
+            ],
+            dist: "./dist/send-email",
+            watch: [
+                "./src/send-email/*.php",
+                "./src/send-email/*.txt"
+            ]
+        },
         views: {
             src: [
                 "./src/views/**/*.html",
@@ -64,10 +74,10 @@ requireDir("./gulp-tasks/");
 export { paths };
 
 export const development = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "sendEmail"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip"]));
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip","sendEmail"]));
 
 export default development;
