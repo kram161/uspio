@@ -152,6 +152,7 @@
             line-height: 22px;
             width: 100%;
             transition: $animation;
+            font-family: 'Bold';
         }
         svg{
             path{
@@ -173,6 +174,7 @@
                     text-align: left;
                     color: $green;
                     transition: $animation;
+                    font-family: 'Bold';
                     &:nth-child(2){
                         padding: 0 6px 0 10px;
                     }
@@ -193,6 +195,7 @@
                     line-height: 22px;
                     text-align: left;
                     color: #37454A99;
+                    font-family: 'Regular';
                     &:nth-child(1){
                         padding: 0 6px 0 0;
                     }
@@ -222,10 +225,12 @@
                 &:nth-child(1){
                     font-size: 16px;
                     font-weight: 700;
+                    font-family: 'Bold';
                 }
                 &:nth-child(2){
                     font-size: 14px;
                     font-weight: 300;
+                    font-family: 'Light';
                 }
             }
         }
@@ -236,6 +241,7 @@
             font-weight: 600;
             color: #37454A;
             transition: $animation;
+            font-family: 'Semibold';
         }
     }
     hr{
@@ -252,6 +258,7 @@
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 30px;
+                font-family: 'ExtraBold';
             }
             span{
                 font-size: 14px;
@@ -259,6 +266,7 @@
                 position: relative;
                 color: $green;
                 transition: $animation;
+                font-family: 'Regular';
                 &::after{
                     position: absolute;
                     content: '';
@@ -325,6 +333,7 @@
                     font-weight: 400;
                     line-height: 22px;
                     position: relative;
+                    font-family: 'Regular';
                     &::before{
                         position: absolute;
                         content: '';

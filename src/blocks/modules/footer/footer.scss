@@ -34,8 +34,12 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
+      font-family: 'Regular';
       svg{
         margin: 0 14px 0 0;
+      }
+      &:nth-child(n+3){
+        text-decoration: underline;
       }
     }
   }
@@ -44,6 +48,7 @@
     font-size: 14px;
     font-weight: 400;
     color: #37454A99;
+    font-family: 'Regular';
   }
   &__menu{
     display: flex;
@@ -60,6 +65,7 @@
         color: #37454A;
         text-decoration: none;
         margin: 0 0 10px 0;
+        font-family: 'ExtraBold';
       }
       li{
         list-style-type: none;
@@ -68,6 +74,7 @@
           font-weight: 400;
           color: #37454A99;
           margin: 0 0 5px 0;
+          font-family: 'Regular';
         }
       }
     }
@@ -82,10 +89,12 @@
       font-weight: 600;
       line-height: 20px;
       color: #37454A99;
+      font-family: 'SemiBold';
     }
     p{
       text-decoration: none;
       font-weight: 400;
+      font-family: 'Regular';
     }
   }
 }

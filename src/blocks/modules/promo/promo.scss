@@ -15,10 +15,11 @@
         a{
             display: flex;
             text-decoration: none;
-            color: #37454A;
+            color: #37454A99;
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
+            font-family: 'Regular';
         }
         &--chevron{
             margin: 0 6px 0 8px; 
@@ -30,6 +31,7 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 26px;
+        font-family: 'ExtraBold';
         span{
             color: $green;
         }
@@ -40,6 +42,7 @@
             font-size: 14px;
             line-height: 18px;
             color: #37454A;
+            font-family: 'Regular';
             &:nth-child(1){
                 opacity: 0.6;
             }

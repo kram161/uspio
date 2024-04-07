@@ -9,6 +9,7 @@
     font-size: 18px;
     font-weight: 700;
     color: $gray;
+    font-family: 'ExtraBold';
   }
   &__newsletter{
     display: flex;
@@ -27,7 +28,7 @@
       color: $gray;
       box-sizing: border-box;
       border-radius: 26px;
-
+      font-family: 'Semibold';
     }
     button{
       width: 100%;
@@ -51,6 +52,7 @@
       color: $gray;
       margin: 16px 0;
       text-align: center;
+      font-family: 'ExtraBold';
     }
     a{
       position: relative;

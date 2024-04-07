@@ -60,6 +60,7 @@ body{
     transition: $animation;
     width: fit-content;
     cursor: pointer;
+    font-family: 'SemiBold';
     &:hover{
         background: $green;
         border-color: #37454A;
@@ -83,6 +84,7 @@ body{
     transition: $animation;
     width: fit-content;
     box-shadow: 0px 10px 20px 0px #84C7374D;
+    font-family: 'ExtraBold';
     &__arrow{
         position: relative;
         content: '';
